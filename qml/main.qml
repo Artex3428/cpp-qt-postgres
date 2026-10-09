@@ -1,59 +1,22 @@
 import QtQuick
-import QtQuick.Controls
+import QtQuick.Window
 
-ApplicationWindow {
-    width: 800
-    height: 500
+Window {
+    width: 900
+    height: 600
 
     visible: true
-
-    title: "MyApp"
+    title: "My App"
 
     Rectangle {
         anchors.fill: parent
-        color: "#16181d"
+        color: "#181818"
 
-        Column {
+        Text {
             anchors.centerIn: parent
-            spacing: 24
-
-            Text {
-                anchors.horizontalCenter: parent.horizontalCenter
-
-                text: "My first C++ application"
-                color: "white"
-
-                font.pixelSize: 32
-                font.bold: true
-            }
-
-            Text {
-                anchors.horizontalCenter: parent.horizontalCenter
-
-                text: "C++ + Qt Quick + QML"
-                color: "#aeb4c0"
-
-                font.pixelSize: 18
-            }
-
-            Button {
-                anchors.horizontalCenter: parent.horizontalCenter
-
-                text: "Test C++ Backend"
-
-                onClicked: {
-                    backend.buttonClicked()
-                }
-            }
-
-            Text {
-                anchors.horizontalCenter: parent.horizontalCenter
-
-                text: "Click count: " + backend.clickCount
-                color: "white"
-
-                font.pixelSize: 20
-            }
+            text: "It works!"
+            color: "white"
+            font.pixelSize: 32
         }
     }
 }
