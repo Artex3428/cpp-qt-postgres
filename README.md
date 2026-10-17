@@ -1,6 +1,8 @@
 ## Info
 A project template at first for projects using c++ for core logic and the qt library with html, css and javascript for the interface along with postgres for the database.
 
+Run and host from the project root with c++ and postgres for database, lua as scripting language to avoid compiling when making changes, html, css and javascript for ui and optionaly a framework and use resources/modules to reuse functionaliteis across different projects and for the structure.
+
 The projects tech stack and structure
 └── MyApp/
     ├── CMakeLists.txt
